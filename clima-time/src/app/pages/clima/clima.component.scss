@@ -16,7 +16,7 @@
         .card {
             width: 100%;
             max-width: 420px;
-            background-color: #00000032;
+            background-color: rgb(10, 14, 22, 0.75);
             padding: 50px;
             border: 0.5px solid rgba(255, 255, 255, 0.474);
             border-radius: 20px;
@@ -25,6 +25,14 @@
             
 
             & #titulo {
+                color: #ffffff;
+            }
+
+            & .city {
+                color: #ffffff;
+            }
+
+            & .temp {
                 color: #ffffff;
             }
             & #botao-container{

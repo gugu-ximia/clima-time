@@ -1,6 +1,9 @@
 <div class="clima-container">
   <div class="card">
     <h1 id="titulo">Bem-Vindo ao Clima Time</h1>
+    <h1 class="city">{{ dadosClima()?.name}}</h1>
+    <div class="temp">{{ dadosClima()?.main?.temp}}°Celsos</div>
+    
     <div id="botao-container">
       <button id="botao" (click)="navegarParaTelaTelaPesquisa()">Pesquisar</button>
     </div>
