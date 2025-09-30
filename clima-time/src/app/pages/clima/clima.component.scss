@@ -1,0 +1,72 @@
+:host {
+    position: fixed;
+    inset: 0;
+    display: block;
+    background-image: url(https://i.pinimg.com/originals/8a/ed/07/8aed075b2259a6f2bace5c4924ceb0a3.jpg);
+    background-size: cover;
+
+    .clima-container {
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        text-align: center;
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background-color: #00000032;
+            padding: 50px;
+            border: 0.5px solid rgba(255, 255, 255, 0.474);
+            border-radius: 20px;
+            backdrop-filter: blur(20px) saturate(1.5);
+            box-shadow: 0 10px 18px #6d6d6dd0;
+            
+
+            & #titulo {
+                color: #ffffff;
+            }
+            & #botao-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & #botao {
+                    border-style: none;
+                    border-radius: 50px;
+                    width: 12vw;
+                    height: 5vh;
+                    font-size: 16px;
+                    font-style: bold;
+
+                }
+
+                & #botao:hover {
+                    color: #ffffff;
+                    background-color: #ffffff00;
+                    transform: scale(1.1);
+                    transition: 2s;
+                    border: 0.5px solid rgba(255, 255, 255, 0.763);
+                    border-radius: 20px;
+                    backdrop-filter: blur(20px) saturate(1.5);
+                    box-shadow: 0 10px 18px #6d6d6dd0;
+                }
+            }
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: 1s;
+
+        }
+
+        .card::after {
+            background-image: url(https://cdn-0001.qstv.on.epicgames.com/UmFwHSIPPUUsHrSdrA/image/landscape_comp.jpeg);
+            background-size: cover;
+            transition: 1s;
+            
+        }
+
+    }
+}
